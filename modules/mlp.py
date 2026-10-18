@@ -1,5 +1,4 @@
 import math
-from platform import architecture
 
 
 class Neuron:
@@ -51,7 +50,7 @@ class Mlp:
     def get_size(self):
         size = 0
         for i in range(len(self.architecture)):
-            size += self.architecture[i] * self.architecture[i - 1] + architecture[i]
+            size += self.architecture[i] * self.architecture[i - 1] + self.architecture[i]
         return size
 
 
